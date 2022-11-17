@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SegmentControlView">
+        <attr name="scv_BackgroundSelectedColor" format="reference|color" />
+        <attr name="scv_BackgroundNormalColor" format="reference|color" />
+        <attr name="scv_TextSelectedColor" format="reference|color" />
+        <attr name="scv_TextNormalColor" format="reference|color" />
+        <attr name="scv_FrameColor" format="reference|color" />
+        <attr name="scv_FrameWidth" format="reference|dimension" />
+        <attr name="scv_FrameCornerRadius" format="reference|dimension" />
+        <attr name="scv_TextSize" format="reference|dimension" />
+        <attr name="scv_TextArray" format="reference" />
+        <attr name="scv_SelectedIndex" format="reference|integer" />
+        <attr name="scv_SegmentPaddingHorizontal" format="reference|dimension" />
+        <attr name="scv_SegmentPaddingVertical" format="reference|dimension" />
+        <attr name="scv_Gradient" format="reference|boolean" />
+    </declare-styleable>
+
+    //为了低版本cardview的圆角图片
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="QuoteView">
+        <attr name="buttonId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundnessProgressBar">
+        <attr name="showCircle" format="boolean" /> <!--是否画背景圈 -->
+        <attr name="circleWidth" format="dimension" />  <!--圈的宽度 -->
+        <attr name="circleColor" format="color" />    <!--圈的颜色 -->
+
+        <attr name="progressWidth" format="dimension" />  <!--进度条的宽度 -->
+        <attr name="progressColor" format="color" />    <!--进度条的颜色 -->
+
+        <attr name="withAnimation" format="boolean" /> <!--是否以动画的形式达到进度值 -->
+        <attr name="animationDuration" format="integer" />  <!--进度条时长 -->
+
+        <attr name="showValue" format="boolean" /> <!--是否显示圈内文字 -->
+        <attr name="showShadow" format="boolean" /> <!--是否显示阴影 -->
+        <attr name="valueColor" format="color"/>  <!--圈内文字的颜色 -->
+        <attr name="valueSize" format="dimension"/> <!--圈内文字的大小 -->
+    </declare-styleable>
+</resources>

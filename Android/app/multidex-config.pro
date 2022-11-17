@@ -1,0 +1,1 @@
+-keep class com.example.df.zhiyun.app.GlobalConfiguration

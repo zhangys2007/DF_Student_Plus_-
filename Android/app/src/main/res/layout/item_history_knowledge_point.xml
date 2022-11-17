@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="@dimen/padding_3"
+    android:paddingRight="@dimen/padding_3">
+    <TextView
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_point_name"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_333"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:text="平均得分率："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_999"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_gravity="center_vertical"
+        android:drawablePadding="@dimen/padding_1"
+        android:drawableRight="@mipmap/right"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+</LinearLayout>

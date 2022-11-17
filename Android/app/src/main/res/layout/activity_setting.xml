@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/include_title"/>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        style="@style/item_container">
+        <TextView
+            android:text="@string/local_store"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_local_store"
+            android:text="总共0G/可用0G"
+            android:textSize="@dimen/size_24"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_clean_cache"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/clean_cache"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:text="0.0M"
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <!--<View-->
+        <!--android:background="@color/bg_grey"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv_help"-->
+        <!--android:text="@string/help"-->
+        <!--style="@style/item_text"/>-->
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_feedback_item"
+        android:text="@string/feedback"
+        style="@style/item_text"/>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:id="@+id/ll_version"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/version_note"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_about"
+        android:text="@string/about_us"
+        style="@style/item_text"/>
+    <FrameLayout
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="@drawable/shape_round_orange_gradient_little"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_logout"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_title"
+        app:layout_behavior="@string/behavior_attach"
+        android:layout_marginBottom="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingLeft="@dimen/padding_5"
+            android:paddingRight="@dimen/padding_5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_steam"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_333"
+                android:textSize="@dimen/size_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.example.df.zhiyun.mvp.ui.widget.flexiblerichtextview.htmltextview.HtmlTextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_sep_content"
+                android:textSize="@dimen/size_24"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:src="@mipmap/play"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/ib_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:text="00:00/00:00"
+                    android:id="@+id/tv_currTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_666" />
+            </LinearLayout>
+            <!--<include layout="@layout/include_last_next"/>-->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ll_content_bottom_sheet"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_peekHeight="41dp"
+        app:layout_behavior="@string/behavior_bottom_sheet_ban">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/tv_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/text_666"
+                    android:textSize="@dimen/size_22"
+                    android:gravity="center"/>
+                <ImageButton
+                    android:visibility="invisible"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/ib_close"
+                    android:src="@mipmap/cancel_grey"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <FrameLayout
+                    android:id="@+id/fl_expand"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent">
+                    <View
+                        android:layout_marginTop="@dimen/padding_1"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/blue_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp">
+                    </View>
+                </FrameLayout>
+
+            </FrameLayout>
+            <View android:background="@color/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <com.example.df.zhiyun.mvp.ui.widget.ViewPagerSlide
+                android:id="@+id/vp_sep"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_height">
+
+            </com.example.df.zhiyun.mvp.ui.widget.ViewPagerSlide>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

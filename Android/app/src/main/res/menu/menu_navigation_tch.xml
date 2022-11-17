@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/i_main"
+        android:checked="true"
+        android:icon="@mipmap/ic_nav_home_i"
+        android:title="@string/main_page" />
+
+    <item
+        android:id="@+id/i_tch"
+        android:icon="@mipmap/ic_nav_tch_i"
+        android:title="@string/tech" />
+    <item
+        android:id="@+id/i_analy"
+        android:icon="@mipmap/ic_nav_analy_i"
+        android:title="@string/analy" />
+    <item
+        android:id="@+id/i_my"
+        android:icon="@mipmap/ic_nav_my_i"
+        android:title="@string/my" />
+</menu>

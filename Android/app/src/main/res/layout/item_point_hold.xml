@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="43dp">
+    <TextView
+        android:text="语序不当"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:textColor="@color/text_333"/>
+    <TextView
+        android:text="平均得分率："
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="10sp"
+        android:textColor="@color/text_999"/>
+    <TextView
+        android:layout_weight="1"
+        android:text="56%"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="#FFFF7400"/>
+    <TextView
+        android:drawableRight="@mipmap/right"
+        android:drawablePadding="@dimen/padding_4"
+        android:text="25人出错"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="10sp"
+        android:textColor="@color/text_666"/>
+</LinearLayout>

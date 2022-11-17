@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_3"
+    android:paddingRight="@dimen/padding_3"
+    android:paddingTop="@dimen/padding_3">
+    <com.example.df.zhiyun.mvp.ui.widget.NLinearLayout
+        android:layout_marginBottom="11dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.df.zhiyun.mvp.ui.widget.flexiblerichtextview.htmltextview.HtmlTextView
+            android:id="@+id/tv_name"
+            android:textSize="@dimen/size_24"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.example.df.zhiyun.mvp.ui.widget.NLinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:layout_marginBottom="15dp"
+        android:lineSpacingExtra="8dp"
+        android:id="@+id/tv_content"
+        android:includeFontPadding="false"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:minHeight="15dp"
+        android:layout_height="wrap_content">
+        <!--<TextView-->
+            <!--android:text="@string/source"-->
+            <!--android:textSize="@dimen/size_20"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textColor="@color/text_999"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <TextView
+            android:text="来源：作业名称"
+            android:id="@+id/tv_from"
+            android:textSize="@dimen/size_20"
+            android:layout_marginRight="@dimen/padding_2"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_999"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_detail"
+            android:text="@string/inspect"
+            android:textSize="9sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/shape_stadium_cyan"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+</LinearLayout>

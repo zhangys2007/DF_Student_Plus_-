@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp">
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="[答题分析]"
+        android:textSize="@dimen/size_24"
+        android:textColor="@color/text_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="20dp"
+        android:text="参考答案"
+        android:background="@drawable/shape_round_green"
+        android:textSize="@dimen/size_16"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+    <com.example.df.zhiyun.mvp.ui.widget.flexiblerichtextview.htmltextview.HtmlTextView
+        android:id="@+id/tv_answer_standard"
+        android:textSize="@dimen/size_36"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_666"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="20dp"
+        android:text="学生答案"
+        android:background="@drawable/shape_round_orange"
+        android:textSize="@dimen/size_16"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+    <com.example.df.zhiyun.mvp.ui.widget.flexiblerichtextview.htmltextview.HtmlTextView
+        android:id="@+id/tv_answer_student"
+        android:textSize="@dimen/size_36"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_666"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="得  分"
+            android:background="@drawable/shape_round_red"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_score_set"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:drawableRight="@mipmap/arrow_down_black"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/size_24"
+            android:textColor="@color/text_666"
+            android:background="@drawable/border_round_light_grey"
+            android:gravity="center"
+            android:minWidth="38dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_score"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/size_30"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_unread"
+            android:visibility="gone"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="待  阅"
+            android:background="@drawable/shape_round_red"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_readed"
+            android:visibility="gone"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="已  阅"
+            android:background="@drawable/shape_round_green"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

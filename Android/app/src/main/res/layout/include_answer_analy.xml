@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pre_hw"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--<View android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/divider"/>-->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_my_title"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:text="@string/my_answer"
+        android:textSize="@dimen/size_24"
+        android:gravity="center"
+        android:textColor="@color/blue_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.example.df.zhiyun.mvp.ui.widget.flexiblerichtextview.htmltextview.HtmlTextView
+        android:visibility="gone"
+        android:id="@+id/tv_my_answer"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginRight="@dimen/padding_5"
+        android:layout_marginTop="@dimen/padding_1"
+        android:layout_marginBottom="@dimen/padding_1"
+        android:textSize="@dimen/size_22"
+        android:gravity="center"
+        android:textColor="@color/text_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="@dimen/padding_5"
+        android:text="@string/correct_answer"
+        android:textSize="@dimen/size_24"
+        android:gravity="center"
+        android:textColor="@color/blue_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.example.df.zhiyun.mvp.ui.widget.flexiblerichtextview.htmltextview.HtmlTextView
+        android:id="@+id/tv_answer"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginRight="@dimen/padding_5"
+        android:layout_marginTop="@dimen/padding_1"
+        android:layout_marginBottom="@dimen/padding_1"
+        android:textSize="@dimen/size_22"
+        android:gravity="center"
+        android:textColor="@color/text_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="@dimen/padding_5"
+        android:text="@string/analy"
+        android:textSize="@dimen/size_24"
+        android:gravity="center"
+        android:textColor="@color/blue_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.example.df.zhiyun.mvp.ui.widget.flexiblerichtextview.htmltextview.HtmlTextView
+        android:layout_marginTop="@dimen/padding_1"
+        android:layout_marginBottom="@dimen/padding_1"
+        android:id="@+id/tv_analy"
+        android:textSize="@dimen/size_22"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_marginRight="@dimen/padding_5"
+        android:textColor="@color/text_666"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

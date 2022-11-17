@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#4aa2f4</color>
+
+
+    <color name="red">#F0191A</color>
+    <color name="cyan">#FFFF5757</color>
+    <color name="text_dark">#1d1e2c</color>
+    <color name="text_333">#333333</color>
+    <color name="text_666">#666666</color>
+    <color name="text_999">#999999</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="text_grey">#525354</color>
+    <color name="bg_grey">#f7f7f7</color>
+    <color name="divider">#e5e5e5</color>
+    <color name="paper">#EEDFBD</color>
+    <color name="mask_30">#10000000</color>
+
+    <color name="blue_bg">#f0f8ff</color>
+    <color name="blue_tag">#4aa2f4</color>
+    <color name="yellow">#fdd425</color>
+    <color name="orange">#f56514</color>
+    <color name="pink_light">#f7f3f2</color>
+    <color name="mask">#33000000</color>
+    <color name="light_orange">#fff6f5</color>
+    <color name="seperate">#FFF5F5F5</color>
+
+
+
+    <color name="green">#44cc29</color>
+    <!-- 灰色 -->
+    <color name="gray">#333333</color>
+    <!-- 分割线颜色 -->
+    <color name="line">#20888888</color>
+    <!-- 蓝色 0099ff-->
+    <color name="blue">#1e90ff</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+
+    <array name="subject_colors">
+        <item>#F0191A</item>
+        <item>#F0191A</item>
+        <item>#4aa2f4</item>
+        <item>#fdd425</item>
+    </array>
+</resources>

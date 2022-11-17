@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.example.df.zhiyun.mvp.ui.widget.flexiblerichtextview.htmltextview.HtmlTextView
+        android:id="@+id/tv_subname"
+        android:layout_marginBottom="@dimen/padding_1"
+        android:textSize="@dimen/size_24"
+        android:layout_marginLeft="@dimen/padding_3"
+        android:layout_marginRight="@dimen/padding_3"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_666"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/padding_3"
+        android:layout_marginRight="@dimen/padding_3"
+        android:id="@+id/ll_sel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <include layout="@layout/include_eare_correct" />
+    <include layout="@layout/include_eare_comment" />
+    <include layout="@layout/include_eare_analy" />
+</LinearLayout>

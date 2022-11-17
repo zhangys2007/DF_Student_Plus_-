@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/i_main"
+        android:checked="true"
+        android:icon="@mipmap/main_iact"
+        android:title="@string/main_page" />
+
+    <item
+        android:id="@+id/i_homework"
+        android:icon="@mipmap/exe_iact"
+        android:title="@string/home_work" />
+    <!--must set the item title to empty-->
+    <item
+        android:id="@+id/i_empty"
+        android:title="" />
+    <item
+        android:id="@+id/i_excer"
+        android:icon="@mipmap/error_item_iact"
+        android:title="@string/error_exer" />
+    <item
+        android:id="@+id/i_my"
+        android:icon="@mipmap/my_iact"
+        android:title="@string/my" />
+</menu>

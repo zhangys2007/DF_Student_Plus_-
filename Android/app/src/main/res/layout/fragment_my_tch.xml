@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/fake_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fake_bar_height" />
+        <android.support.constraint.ConstraintLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="147dp">
+                <ImageView
+                    android:src="@mipmap/thumb_tch"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="21dp"
+                    android:scaleType="centerCrop"
+                    android:layout_width="59dp"
+                    android:layout_height="59dp"
+                    android:id="@+id/civ_thumb"/>
+                <TextView
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/civ_thumb"
+                    android:layout_marginTop="8dp"
+                    android:text="用户名"
+                    android:id="@+id/tv_name"
+                    android:textColor="@color/text_333"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/ic_man"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintLeft_toRightOf="@id/tv_name"
+                    app:layout_constraintTop_toTopOf="@id/tv_name"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_name"
+                    android:scaleType="centerCrop"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:id="@+id/iv_sex"/>
+                <TextView
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name"
+                    android:layout_marginTop="8dp"
+                    android:text="学校"
+                    android:id="@+id/tv_school"
+                    android:textColor="@color/text_666"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.constraint.ConstraintLayout>
+        <View android:background="#F6F6F6"
+            android:layout_width="match_parent"
+            android:layout_height="7.5dp"/>
+        <TextView
+            style="@style/item_my"
+            android:id="@+id/tv_profile"
+            android:drawableLeft="@mipmap/ic_profile"
+            android:text="@string/person_profile" />
+        <TextView
+            style="@style/item_my"
+            android:id="@+id/tv_error_exer"
+            android:drawableLeft="@mipmap/ic_error"
+            android:text="@string/error_exer" />
+        <View android:background="#F6F6F6"
+            android:layout_width="match_parent"
+            android:layout_height="7.5dp"/>
+        <TextView
+            style="@style/item_my"
+            android:id="@+id/tv_msg"
+            android:drawableLeft="@mipmap/ic_msg"
+            android:text="@string/msg" />
+        <TextView
+            style="@style/item_my"
+            android:id="@+id/tv_my_class"
+            android:drawableLeft="@mipmap/ic_cls"
+            android:text="@string/my_class" />
+        <View android:background="#F6F6F6"
+            android:layout_width="match_parent"
+            android:layout_height="7.5dp"/>
+        <TextView
+            style="@style/item_my"
+            android:id="@+id/tv_sys_post"
+            android:drawableLeft="@mipmap/ic_post"
+            android:text="@string/sys_post" />
+        <TextView
+            style="@style/item_my"
+            android:id="@+id/tv_setting"
+            android:drawableLeft="@mipmap/ic_setting"
+            android:text="@string/setting" />
+        <View android:background="#F6F6F6"
+            android:layout_width="match_parent"
+            android:layout_height="7.5dp"/>
+    </LinearLayout>
+</ScrollView>

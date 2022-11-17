@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/ll_op_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="@dimen/padding_1"
+        android:layout_marginBottom="@dimen/padding_1"
+        android:id="@+id/tv_op_name"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/text_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/shape_round_pink"
+            android:scaleType="centerInside"
+            android:id="@+id/iv_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <EditText
+            android:gravity="top|left"
+            android:background="@drawable/shape_round_pink"
+            android:padding="@dimen/padding_2"
+            android:id="@+id/et_input"
+            android:hint="@string/input_answer"
+            android:textColorHint="@color/text_999"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size_24"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_666"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:clickable="true"
+            android:background="@drawable/shape_round_orange_gradient_little"
+            android:textColor="@color/white"
+            android:id="@+id/tv_canvas"
+            android:text="@string/answer_with_canvas"
+            android:paddingLeft="@dimen/padding_2"
+            android:paddingRight="@dimen/padding_2"
+            android:minHeight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp" />
+        <TextView
+            android:clickable="true"
+            android:visibility="invisible"
+            android:textColor="@color/blue_tag"
+            android:id="@+id/tv_rechoice"
+            android:text="@string/reanswer"
+            android:paddingLeft="@dimen/padding_2"
+            android:paddingRight="@dimen/padding_2"
+            android:minHeight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

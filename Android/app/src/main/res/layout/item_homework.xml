@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="18dp"
+    android:paddingBottom="18dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="27dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_do"
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_round_blue"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="@color/blue_tag"
+            android:textSize="@dimen/size_18" />
+        <TextView
+            android:id="@+id/tv_subjuet_name"
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_round_grey"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/size_18" />
+        <TextView
+            android:id="@+id/tv_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_round_yellow"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/size_18" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_homewwork_name"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/text_666"
+        android:textSize="@dimen/size_28"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_time_start"
+            android:drawableLeft="@mipmap/clock"
+            android:drawablePadding="14dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/size_20" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_time_end"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/size_20" />
+    </LinearLayout>
+
+</LinearLayout>

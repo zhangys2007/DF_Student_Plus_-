@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/padding_2"
+        android:layout_marginRight="@dimen/padding_2"
+        android:layout_marginLeft="@dimen/padding_2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+            <ImageView
+                android:src="@mipmap/moon"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="0"
+                android:paddingLeft="8dp"
+                android:id="@+id/tv_count_big"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout
+            android:paddingLeft="@dimen/padding_2"
+            android:paddingRight="@dimen/padding_2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_moon"
+                android:textSize="@dimen/size_20"
+                android:layout_weight="1"
+                android:textColor="@color/text_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/moon_total_signed"
+                android:textSize="@dimen/size_20"
+                android:textColor="@color/text_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="0"
+                android:id="@+id/tv_signed_count"
+                android:textSize="@dimen/size_20"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/orange"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/day"
+                android:textSize="@dimen/size_20"
+                android:textColor="@color/text_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <FrameLayout
+            android:id="@+id/fl_signed"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_round_orange_gradient"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp" >
+            <TextView
+                android:background="?attr/selectableItemBackground"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_30"
+                android:text="@string/signed"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/padding_2"
+        android:layout_marginLeft="@dimen/padding_2"
+        android:layout_marginRight="@dimen/padding_2"
+        android:paddingLeft="@dimen/padding_2"
+        android:paddingRight="@dimen/padding_2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="40dp">
+        <TextView
+            android:text="@string/signed_notice"
+            android:textSize="@dimen/size_24"
+            android:textColor="@color/text_333"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/swt_notifer"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:track="@drawable/switch_track_selector"
+            android:switchMinWidth="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

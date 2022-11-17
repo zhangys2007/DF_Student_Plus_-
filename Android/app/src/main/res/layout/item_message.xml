@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="13dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@mipmap/thumb"
+        android:layout_centerVertical="true"
+        android:id="@+id/civ_thumb"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_toRightOf="@id/civ_thumb"
+        android:layout_marginLeft="18dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:textSize="@dimen/size_30"
+                android:textColor="@color/text_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="@dimen/size_24"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/text_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:textSize="@dimen/size_20"
+                android:gravity="right"
+                android:textColor="@color/text_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/v_red"
+                android:visibility="invisible"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:textSize="@dimen/size_24"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/text_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

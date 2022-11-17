@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_grey"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@mipmap/orange_bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/fake_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fake_bar_height" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <RelativeLayout
+                    android:layout_marginTop="24dp"
+                    android:paddingLeft="@dimen/padding_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_thumb"
+                        android:src="@mipmap/thumb"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                    <LinearLayout
+                        android:layout_toRightOf="@id/civ_thumb"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tv_name"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text=""
+                            android:id="@+id/tv_school"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/ib_profile"
+                        android:layout_alignParentRight="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@mipmap/right_white"
+                        style="@style/toolbar_button" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/ll_signed"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="0"
+                            android:id="@+id/tv_signed"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:text="我的签到"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_exer"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="0"
+                            android:id="@+id/tv_record"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:text="练习记录"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_store"
+                        android:clickable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="0"
+                            android:id="@+id/tv_fav"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:text="我的收藏"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/padding_3"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_error_exer"
+                android:text="@string/error_exer"
+                android:drawableLeft="@mipmap/error_excer_g"
+                style="@style/item_text" />
+            <View
+                android:background="@color/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider" />
+            <TextView
+                android:id="@+id/tv_my_homework"
+                android:text="@string/my_homework"
+                android:drawableLeft="@mipmap/my_homework"
+                style="@style/item_text"/>
+            <View
+                android:background="@color/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider" />
+            <TextView
+                android:id="@+id/tv_my_data_analy"
+                android:text="@string/score_trace"
+                android:drawableLeft="@mipmap/data_analy"
+                style="@style/item_text" />
+            <View
+                android:background="@color/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_1" />
+            <TextView
+                android:id="@+id/tv_my_class"
+                android:text="@string/my_class"
+                android:drawableLeft="@mipmap/my_class"
+                style="@style/item_text" />
+            <View
+                android:background="@color/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider" />
+            <LinearLayout
+                android:id="@+id/ll_my_msg"
+                style="@style/item_container">
+                <TextView
+                    android:drawableLeft="@mipmap/msg"
+                    android:text="@string/my_msg"
+                    style="@style/item_text_left" />
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/tv_msg_count"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/shape_circle_red"
+                    android:layout_width="wrap_content"
+                    android:minWidth="18dp"
+                    android:layout_height="18dp" />
+                <TextView
+                    style="@style/item_text_right" />
+            </LinearLayout>
+            <View
+                android:background="@color/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_1" />
+            <TextView
+                android:id="@+id/tv_my_post"
+                android:text="@string/post"
+                android:drawableLeft="@mipmap/post"
+                style="@style/item_text" />
+            <View
+                android:background="@color/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider" />
+            <TextView
+                android:id="@+id/tv_setting"
+                android:text="@string/setting"
+                android:drawableLeft="@mipmap/setting"
+                style="@style/item_text" />
+            <View
+                android:background="@color/bg_grey"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

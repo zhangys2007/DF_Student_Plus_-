@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/include_title"/>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:id="@+id/ll_avatar"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="@string/avatar"
+            android:textColor="@color/text_666"
+            style="@style/item_text_left" />
+        <ImageView
+            android:layout_marginRight="10.5dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/civ_thumb"
+            android:src="@mipmap/thumb_tch"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_user_name"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/user_name"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:text=""
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_birthday"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/birthday"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_birthday"
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_sex"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/sex"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_sex"
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_email"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/e_mail"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/mobile"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_psw"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/change_psw"
+            style="@style/item_text_left" />
+        <TextView
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_school"
+        style="@style/item_container">
+        <TextView
+            android:text="@string/change_school"
+            style="@style/item_text_left" />
+        <TextView
+            android:id="@+id/tv_school_name"
+            style="@style/item_text_right" />
+    </LinearLayout>
+    <FrameLayout
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

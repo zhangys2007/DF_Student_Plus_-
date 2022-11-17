@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/ib_cancel"
+            android:src="@mipmap/cancel"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:src="@mipmap/delete"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/ib_undo"
+            android:src="@mipmap/undo"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/ib_done"
+            android:src="@mipmap/done"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.example.df.zhiyun.mvp.ui.widget.fabricview.FabricView
+        android:id="@+id/fabricview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.df.zhiyun.mvp.ui.widget.fabricview.FabricView>
+</LinearLayout>

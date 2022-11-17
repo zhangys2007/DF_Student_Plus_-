@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/include_title"/>
+    <TextView
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/tv_student_info"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/text_666"
+        android:textSize="@dimen/size_24"
+        android:paddingLeft="@dimen/padding_3"
+        android:paddingRight="@dimen/padding_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+</LinearLayout>

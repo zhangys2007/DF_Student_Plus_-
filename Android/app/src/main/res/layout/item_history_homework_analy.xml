@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minHeight="100dp"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/tv_name"
+        android:textSize="15sp"
+        android:textColor="@color/text_333"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="日期："
+            android:id="@+id/tv_time"
+            android:textSize="12sp"
+            android:textColor="@color/text_999"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="学科："
+            android:id="@+id/tv_subj"
+            android:textSize="12sp"
+            android:textColor="@color/text_999"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="年级："
+            android:id="@+id/tv_grade"
+            android:textSize="12sp"
+            android:textColor="@color/text_999"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="满分："
+            android:id="@+id/tv_full"
+            android:textSize="12sp"
+            android:textColor="@color/text_666"
+            android:minWidth="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_complete_title"
+            android:layout_marginLeft="@dimen/padding_3"
+            android:text="完成班级数："
+            android:textSize="12sp"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_complete"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="/0"
+            android:id="@+id/tv_all"
+            android:textSize="14sp"
+            android:textColor="@color/text_666"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:text="@string/inspect"
+            android:id="@+id/btn_inspect"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/shape_round_orange"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_width="64dp"
+            android:layout_height="20dp" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:text="@string/data_analy"
+            android:id="@+id/btn_data"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/shape_round_blue"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_width="64dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

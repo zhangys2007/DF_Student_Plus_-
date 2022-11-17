@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="135dp">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="作业时间:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv_k_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_999"
+            android:textSize="10sp" />
+        <TextView
+            android:text="共有 0 位学生做错"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv_k_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_999"
+            android:textSize="10sp" />
+        <TextView
+            android:text="作业名"
+            android:gravity="left"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_k_time"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv_k_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_333"
+            android:textSize="14sp" />
+
+        <com.example.df.zhiyun.mvp.ui.widget.RoundnessProgressBar
+            android:id="@+id/pb_rate"
+            android:layout_marginLeft="10dp"
+            app:withAnimation="false"
+            app:circleColor = "#FFF5F5F5"
+            app:progressWidth = "4dp"
+            app:progressColor="@color/cyan"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_k_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:text="00.0%"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintRight_toRightOf="@id/pb_rate"
+            app:layout_constraintLeft_toLeftOf="@id/pb_rate"
+            app:layout_constraintBottom_toTopOf="@id/tv_k_rate"
+            app:layout_constraintTop_toTopOf="@id/pb_rate"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_k_rate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cyan"
+            android:textSize="10sp" />
+        <TextView
+            android:text="得分率"
+            app:layout_constraintRight_toRightOf="@id/pb_rate"
+            app:layout_constraintLeft_toLeftOf="@id/pb_rate"
+            app:layout_constraintBottom_toBottomOf="@id/pb_rate"
+            app:layout_constraintTop_toBottomOf="@id/tv_k_rate_value"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_k_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_999"
+            android:textSize="8sp" />
+        <TextView
+            android:text="第 3 题、第 8 题、第11题"
+            android:gravity="left"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/pb_rate"
+            app:layout_constraintBottom_toBottomOf="@id/pb_rate"
+            app:layout_constraintTop_toTopOf="@id/pb_rate"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_k_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_333"
+            android:textSize="14sp" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

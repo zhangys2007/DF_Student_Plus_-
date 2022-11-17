@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp">
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="12dp"
+            android:id="@+id/tv_class_name"
+            android:textSize="@dimen/size_22"
+            android:textColor="@color/text_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_class_other"
+            android:layout_marginTop="14dp"
+            android:textSize="@dimen/size_22"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_class_brief"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:textSize="@dimen/size_22"
+            android:textColor="@color/text_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:drawableRight="@mipmap/right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="@dimen/padding_1"
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/size_22" />
+
+</RelativeLayout>

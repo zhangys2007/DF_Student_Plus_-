@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<TextView-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:padding="2dp"-->
+            <!--android:background="@drawable/border_recangle_red"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:text="@string/uncorrected"-->
+            <!--android:textSize="@dimen/size_16"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <TextView
+            android:id="@+id/tv_paper_name"
+            android:maxLines="2"
+            android:textColor="@color/text_333"
+            android:textSize="@dimen/size_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/submit_time"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/text_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_submit_time"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/text_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="37dp"
+            android:text="@string/submit_number"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/text_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_submit_number"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/text_999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/name"
+            android:textSize="@dimen/size_18"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_submit_name"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/size_18"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="54dp"
+            android:text="@string/class_tag"
+            android:textSize="@dimen/size_18"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_submit_class"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/size_18"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider"/>
+    <com.google.android.flexbox.FlexboxLayout
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_around"
+        android:layout_width="match_parent"
+        android:layout_height="96dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/full_credit"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/text_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_full_credit"
+                android:layout_marginTop="10dp"
+                android:text="--"
+                android:textSize="@dimen/size_36"
+                android:textColor="@color/text_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/student_marks"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/text_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_my_credit"
+                android:layout_marginTop="10dp"
+                android:text="--"
+                android:textSize="@dimen/size_36"
+                android:textColor="@color/text_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/cls_avg_marks"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/text_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_avg_credit"
+                android:layout_marginTop="10dp"
+                android:text="--"
+                android:textSize="@dimen/size_36"
+                android:textColor="@color/text_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider"/>
+    <FrameLayout
+
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_round_blue_big"
+        android:layout_marginTop="40dp"
+        android:layout_width="253dp"
+        android:layout_height="38dp" >
+        <TextView
+            android:id="@+id/tv_check_paper"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:textSize="@dimen/size_24"
+            android:textColor="@color/white"
+            android:text="@string/check_paper"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

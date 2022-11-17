@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_width="match_parent"
+            android:minHeight="48dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:id="@+id/tv_put_hw_name"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text_333"
+                android:textSize="@dimen/size_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+        <TextView
+            android:paddingLeft="12dp"
+            android:textSize="@dimen/size_28"
+            android:text="@string/sel_class"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center_vertical"/>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+        <android.support.v7.widget.RecyclerView
+            android:paddingLeft="24dp"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="38dp">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/size_28"-->
+                <!--android:text="@string/type"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="38dp"-->
+                <!--android:gravity="center_vertical"/>-->
+            <!--<RadioGroup-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:id="@+id/rg_type"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<RadioButton-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:button="@drawable/radio_thumb_selector"-->
+                    <!--android:checked="true"-->
+                    <!--android:id="@+id/rb_hw"-->
+                    <!--android:text="@string/home_work"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<RadioButton-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:button="@drawable/radio_thumb_selector"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:id="@+id/rb_paper"-->
+                    <!--android:text="@string/test"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</RadioGroup>-->
+        <!--</LinearLayout>-->
+        <!--<View android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/divider"/>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_star"-->
+            <!--android:background="?attr/selectableItemBackground"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="38dp">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/size_28"-->
+                <!--android:text="@string/start_time"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"/>-->
+            <!--<TextView-->
+                <!--android:drawableRight="@mipmap/right"-->
+                <!--android:drawablePadding="@dimen/padding_1"-->
+                <!--android:id="@+id/tv_start_time"-->
+                <!--android:textSize="@dimen/size_24"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical|right"/>-->
+        <!--</LinearLayout>-->
+        <!--<View android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/divider"/>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_end"-->
+            <!--android:background="?attr/selectableItemBackground"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="38dp">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/size_28"-->
+                <!--android:text="@string/end_time1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"/>-->
+            <!--<TextView-->
+                <!--android:drawableRight="@mipmap/right"-->
+                <!--android:drawablePadding="@dimen/padding_1"-->
+                <!--android:id="@+id/tv_end_time"-->
+                <!--android:textSize="@dimen/size_24"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical|right"/>-->
+        <!--</LinearLayout>-->
+        <!--<View android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/divider"/>-->
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="38dp">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/size_28"-->
+                <!--android:text="@string/hide_before_starte"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"/>-->
+            <!--<Switch-->
+                <!--android:id="@+id/swt_start_hide"-->
+                <!--android:thumb="@drawable/switch_thumb_selector"-->
+                <!--android:track="@drawable/switch_track_selector_orange"-->
+                <!--android:switchMinWidth="40dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+        <!--<View android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/divider"/>-->
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="38dp">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/size_28"-->
+                <!--android:text="@string/show_after_submit"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"/>-->
+            <!--<Switch-->
+                <!--android:id="@+id/swt_submit_show"-->
+                <!--android:thumb="@drawable/switch_thumb_selector"-->
+                <!--android:track="@drawable/switch_track_selector_orange"-->
+                <!--android:switchMinWidth="40dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_round_blue_big"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_put"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/cancel_hw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

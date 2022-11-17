@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_bar_last_next"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <TextView
+        android:id="@+id/tv_last"
+        android:textSize="@dimen/size_22"
+        android:gravity="center"
+        android:background="@drawable/border_round_grey_bgi"
+        android:text="@string/last_question"
+        android:layout_width="125dp"
+        android:layout_height="match_parent" />
+    <Space
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_next"
+        android:textSize="@dimen/size_22"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/shape_round_blue_big"
+        android:text="@string/next_question"
+        android:layout_width="125dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

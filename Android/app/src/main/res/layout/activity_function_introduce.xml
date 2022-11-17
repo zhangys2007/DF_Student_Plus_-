@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/include_title"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:text="教师端"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/size_28"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/orange"
+                    android:layout_width="5dp"
+                    android:layout_height="@dimen/size_28"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="老师布置批改作业"
+                    android:textColor="@color/text_333"
+                    android:textSize="@dimen/size_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="老师布置作业、批改作业都在作业版块，操作更加快捷."
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/size_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/fuc_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/orange"
+                    android:layout_width="5dp"
+                    android:layout_height="@dimen/size_28"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="作业讲评"
+                    android:textColor="@color/text_333"
+                    android:textSize="@dimen/size_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="学生每次作业都尽在掌握之中，合理精准的数据分析,及时反馈"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/size_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/fuc_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:text="学生端"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/size_28"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/orange"
+                    android:layout_width="5dp"
+                    android:layout_height="@dimen/size_28"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="学生在线练习、 考试"
+                    android:textColor="@color/text_333"
+                    android:textSize="@dimen/size_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="学生可以在手机.上完成老师布置的作业和考试，也可以自己练习教材下的习题。"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/size_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/fuc_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/orange"
+                    android:layout_width="5dp"
+                    android:layout_height="@dimen/size_28"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="作业分析"
+                    android:textColor="@color/text_333"
+                    android:textSize="@dimen/size_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="每次作业经老师批改后都能自动生成一份数据分析， 通过这个数据分析可以清楚的了解自己的成绩，以及自己未掌握的知识。"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/size_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/fuc_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/orange"
+                    android:layout_width="5dp"
+                    android:layout_height="@dimen/size_28"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="错题本"
+                    android:textColor="@color/text_333"
+                    android:textSize="@dimen/size_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="学生每次作业、考试、以及同步练习中产生的错题都会收集在错题本里。每个错题都有详细解笞。"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/size_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/fuc_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+

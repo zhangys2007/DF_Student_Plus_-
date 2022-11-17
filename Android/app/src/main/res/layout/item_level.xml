@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:background="@drawable/border_round_grey_small"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+    <ImageView
+        android:id="@+id/iv_todo"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_list_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/iv_todo"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="作业名称作业名称作业名称作业名名称作业名称作称作业"
+        android:id="@+id/tv_level_title"
+        android:textSize="11sp"
+        android:textColor="@color/text_333"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="已批：15人    提交：15人  未交：3人"
+        android:textSize="9sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_todo"
+        android:id="@+id/tv_level_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<!--    中间部分-->
+    <TextView
+        android:layout_marginTop="13.5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_max"
+        app:layout_constraintTop_toBottomOf="@id/tv_level_count"
+        android:text="@string/avg_score"
+        android:id="@+id/tv_avg"
+        android:textSize="9sp"
+        android:textColor="@color/text_999"
+        android:gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="13.5dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_avg"
+        app:layout_constraintRight_toLeftOf="@id/tv_min"
+        app:layout_constraintTop_toBottomOf="@id/tv_level_count"
+        android:text="@string/max_score"
+        android:id="@+id/tv_max"
+        android:textSize="9sp"
+        android:textColor="@color/text_999"
+        android:gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="13.5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_max"
+        app:layout_constraintTop_toBottomOf="@id/tv_level_count"
+        android:text="@string/min_score"
+        android:id="@+id/tv_min"
+        android:textSize="9sp"
+        android:textColor="@color/text_999"
+        android:gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+
+<!--具体分值-->
+    <TextView
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_max_value"
+        android:text="67.9"
+        android:id="@+id/tv_avg_value"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_333"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_avg_value"
+        app:layout_constraintRight_toLeftOf="@id/tv_min_value"
+        android:text="82"
+        android:id="@+id/tv_max_value"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_333"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_max_value"
+        android:text="44.1"
+        android:id="@+id/tv_min_value"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_333"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+<!--底部时间-->
+    <TextView
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="4月21日"
+        android:id="@+id/tv_todo_time"
+        android:textSize="11sp"
+        android:textColor="@color/text_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="14dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_todo_time"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_todo_time"
+        android:text="成绩更新：2020-04-23  8:35:52"
+        android:id="@+id/tv_update_time"
+        android:textSize="10sp"
+        android:textColor="@color/text_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:background="@drawable/border_stadium_purple"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_todo_time"
+        android:text="@string/cls_report"
+        android:id="@+id/tv_post_inspect"
+        android:textSize="10sp"
+        android:textColor="#FF8893FF"
+        android:layout_width="60dp"
+        android:layout_height="18dp" />
+</android.support.constraint.ConstraintLayout>

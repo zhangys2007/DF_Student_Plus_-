@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_answer_index"
+        android:layout_centerInParent="true"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <View
+        android:id="@+id/v_bottom"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:layout_width="25dp"
+        android:background="@color/cyan"/>
+</RelativeLayout>

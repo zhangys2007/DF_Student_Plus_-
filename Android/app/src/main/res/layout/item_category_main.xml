@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:paddingRight="@dimen/padding_3"
+    android:paddingLeft="@dimen/padding_3">
+    <RelativeLayout
+        android:layout_marginRight="@dimen/padding_2"
+        android:layout_width="20dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_add_red"
+            android:src="@mipmap/add_red"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/v_add_line_down"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/iv_add_red" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_category_name_0"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/padding_2"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/size_24"
+        android:textColor="@color/text_333"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_question_numb"
+        android:textSize="@dimen/size_20"
+        android:textColor="@color/text_999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

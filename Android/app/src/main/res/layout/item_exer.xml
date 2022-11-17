@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@color/colorPrimary"
+            android:scaleType="centerInside"
+            android:src="@mipmap/clock_white"
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="00 : 15"
+            android:minWidth="40dp"
+            android:gravity="center"
+            android:id="@+id/tv_time_duration"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="16dp"
+            android:background="@drawable/border_recangle_red"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/size_20" />
+        <TextView
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:gravity="center"
+            android:id="@+id/tv_subject"
+            android:layout_width="wrap_content"
+            android:minWidth="30dp"
+            android:layout_height="wrap_content"
+            android:minHeight="16dp"
+            android:background="@drawable/border_recangle_grey"
+            android:textColor="@color/text_999"
+            android:textSize="@dimen/size_20" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/text_666"
+        android:textSize="@dimen/size_30"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="2019.07.06 18:00"
+        android:id="@+id/tv_time"
+        android:drawableLeft="@mipmap/clock"
+        android:drawablePadding="14dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/text_999"
+        android:textSize="@dimen/size_20" />
+
+</LinearLayout>

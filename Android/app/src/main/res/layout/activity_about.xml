@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/include_title"/>
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/logo_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="@dimen/size_30"
+        android:textColor="@color/text_666"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_version_name"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_function"
+        android:text="@string/function_introduce"
+        style="@style/item_text"/>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_company"
+        android:text="@string/company_about"
+        style="@style/item_text"/>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_hot_line"
+        android:text="@string/hot_line"
+        style="@style/item_text"/>
+    <View
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_focus"
+        android:text="@string/focus_us"
+        style="@style/item_text"/>
+    <View
+        android:visibility="invisible"
+        android:background="@color/bg_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

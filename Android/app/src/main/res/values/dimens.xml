@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fake_bar_height">20dp</dimen>
+    <dimen name="bar_height">48dp</dimen>
+    <dimen name="filter_bar_height">35dp</dimen>
+
+
+    <!--字体大小-->
+    <!--<dimen name="size_56">28sp</dimen>-->
+    <!--<dimen name="size_36">18sp</dimen>-->
+    <!--<dimen name="size_30">15sp</dimen>-->
+    <!--<dimen name="size_28">14sp</dimen>-->
+    <!--<dimen name="size_24">12sp</dimen>-->
+    <!--<dimen name="size_22">11sp</dimen>-->
+    <!--<dimen name="size_20">10sp</dimen>-->
+    <!--<dimen name="size_18">9sp</dimen>-->
+    <!--<dimen name="size_16">8sp</dimen>-->
+
+    <dimen name="size_56">28sp</dimen>
+    <dimen name="size_36">20sp</dimen>
+    <dimen name="size_30">17sp</dimen>
+    <dimen name="size_28">16sp</dimen>
+    <dimen name="size_24">14sp</dimen>
+    <dimen name="size_22">13sp</dimen>
+    <dimen name="size_20">12sp</dimen>
+    <dimen name="size_18">11sp</dimen>
+    <dimen name="size_16">10sp</dimen>
+
+    <!--统一的边距-->
+    <dimen name="padding">8dp</dimen>
+    <dimen name="padding_1">5dp</dimen>
+    <dimen name="padding_2">10dp</dimen>
+    <dimen name="padding_3">15dp</dimen>
+    <dimen name="padding_4">20dp</dimen>
+    <dimen name="padding_5">25dp</dimen>
+    <!--分割线-->
+    <dimen name="divider">1dp</dimen>
+    <!--圆角-->
+    <dimen name="radius">4dp</dimen>
+
+    <dimen name="panel_height">350dp</dimen>
+    <dimen name="common_height">40dp</dimen>
+    <dimen name="design_fab_size_normal">50dp</dimen>   //floatingaction button的大小
+    <dimen name="badge_width_padding">1dp</dimen>   //
+
+
+</resources>

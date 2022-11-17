@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@mipmap/zuoye"
+        android:drawablePadding="@dimen/padding_1"
+        android:layout_centerVertical="true"
+        android:text="@string/correct_homework"
+        android:textSize="@dimen/size_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/tv_hw_more"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

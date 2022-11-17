@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.example.df.zhiyun">
+
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+<application
+    android:name="com.jess.arms.base.BaseApplication"
+    android:allowBackup="true"
+    android:icon="@mipmap/logo_launcher"
+    android:label="@string/app_name"
+    android:networkSecurityConfig="@xml/network_security_config"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name="com.example.df.zhiyun.analy.mvp.ui.activity.StaticDetailActivity"
+        android:label="错题统计详情"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.analy.mvp.ui.activity.LevelReportDetailActivity"
+        android:label="学业水平报告"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.analy.mvp.ui.activity.KnowledgeHoldActivity"
+        android:label=""
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.analy.mvp.ui.activity.LevelReportActivity"
+        android:label="@string/search_level_report"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.educate.mvp.ui.activity.DualTableActivity"
+        android:label="@string/double_table"
+        android:screenOrientation="landscape"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.educate.mvp.ui.activity.TextbookSelActivity"
+        android:label="@string/sel_textbook_version"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.educate.mvp.ui.activity.HwPutActivity"
+        android:label="@string/put_homework"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.educate.mvp.ui.activity.HwHistoryActivity"
+        android:label="@string/history_homework"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.plan.mvp.ui.activity.PlanCloudActivity"
+        android:label="@string/cloud_plan"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.preview.mvp.ui.activity.ResolveStdActivity"
+        android:label=""
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.preview.mvp.ui.activity.ResolveTchActivity"
+        android:label="@string/question_resolve"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name="com.example.df.zhiyun.analy.mvp.ui.activity.ClsHwReportActivity"
+        android:label="@string/cls_report"
+        android:screenOrientation="portrait"></activity>
+
+    <activity
+        android:name=".analy.mvp.ui.activity.GradeDataAnalyActivity"
+        android:screenOrientation="landscape" />
+    <activity
+        android:name=".analy.mvp.ui.activity.ClassDataAnalyActivity"
+        android:screenOrientation="landscape" />
+    <activity
+        android:name=".mvp.ui.activity.ClassCorrectInfoActivity"
+        android:label="@string/class_correct_info"></activity>
+    <activity
+        android:name=".analy.mvp.ui.activity.HistoryHomeworkAnalyActivity"
+        android:label="@string/history_hw_analy"></activity>
+    <activity android:name=".analy.mvp.presenter.KnowledgePointAnalysisActivity"></activity>
+    <activity
+        android:name=".analy.mvp.ui.activity.HistoryKnowledgePointActivity"
+        android:label="@string/knowledge_analy"></activity>
+    <activity
+        android:name=".comment.mvp.ui.activity.CommentUsageActivity"
+        android:label="@string/comment_usage_analy"
+        android:screenOrientation="landscape"></activity>
+    <activity
+        android:name=".plan.mvp.ui.activity.PlanUsingActivity"
+        android:label="@string/plan_using"
+        android:screenOrientation="landscape" />
+    <activity
+        android:name=".mvp.ui.activity.SubmitCorrectActivity"
+        android:label="@string/hw_submit_correct"
+        android:screenOrientation="landscape" />
+    <activity
+        android:name=".analy.mvp.ui.activity.GrowthTraceClassActivity"
+        android:label="@string/improve_trace_class" />
+    <activity
+        android:name=".analy.mvp.ui.activity.GrowthTraceActivity"
+        android:label="@string/student_growth_trace" />
+    <activity
+        android:name=".analy.mvp.ui.activity.AnalyReportActivity"
+        android:label="@string/analy_report" />
+    <activity
+        android:name=".analy.mvp.ui.activity.KnowledgeStatisticsActivity"
+        android:label="@string/knowledgestatistics" />
+    <activity
+        android:name=".analy.mvp.ui.activity.ScoreTraceActivity"
+        android:label="@string/score_trace" />
+    <activity
+        android:name=".analy.mvp.ui.activity.GrowthTraceListActivity"
+        android:label="@string/student_growth_trace" />
+    <activity
+        android:name=".correct.mvp.ui.activity.CorrectCardActivity"
+        android:label="@string/uncorrected" />
+    <activity
+        android:name=".correct.mvp.ui.activity.CorrectHWActivity"
+        android:label="@string/uncorrected" />
+    <activity
+        android:name=".correct.mvp.ui.activity.CorrectSomeOneActivity"
+        android:label="@string/uncorrected" />
+    <activity android:name=".analy.mvp.ui.activity.AnalyHistoryHWActivity" />
+    <activity
+        android:name=".setting.mvp.ui.activity.FunctionIntroduceActivity"
+        android:label="@string/function_introduce" />
+    <activity
+        android:name=".setting.mvp.ui.activity.CompanyActivity"
+        android:label="@string/company_about" />
+    <activity android:name=".comment.mvp.ui.activity.CommentAnalyDetailActivity" />
+    <activity android:name=".analy.mvp.ui.activity.AnalyDetailActivity" />
+    <activity
+        android:name=".mvp.ui.activity.FocusActivity"
+        android:label="@string/focus_us" />
+    <activity
+        android:name=".plan.mvp.ui.activity.PlanResourceActivity"
+        android:label="@string/resource_preview" />
+    <activity
+        android:name=".analy.mvp.ui.activity.AnalyActivity"
+        android:label="@string/data_analy" />
+    <activity android:name=".plan.mvp.ui.activity.DesignActivity" />
+    <activity
+        android:name=".plan.mvp.ui.activity.PlanActivity"
+        android:label="@string/my_template" />
+    <activity
+        android:name=".preview.mvp.ui.activity.PreviewHomeworkActivity"
+        android:label="@string/preview" />
+    <activity
+        android:name=".mvp.ui.activity.PutHWDetailActivity"
+        android:label="@string/put_hw_detail" />
+    <activity
+        android:name=".mvp.ui.activity.CancelHWActivity"
+        android:label="@string/cancel_hw" />
+    <activity
+        android:name=".educate.mvp.ui.activity.PutClsHWActivity"
+        android:label="@string/put" />
+    <activity
+        android:name=".mvp.ui.activity.FormedPapersActivity"
+        android:label="@string/formed_papers" />
+    <activity
+        android:name=".mvp.ui.activity.SelPaperListActivity"
+        android:label="@string/selpaper" />
+    <activity
+        android:name=".mvp.ui.activity.ArrangeHWActivity"
+        android:label="@string/correct_homework" />
+    <activity
+        android:name=".mvp.ui.activity.VersionSwitchActivity"
+        android:label="@string/switch_version" />
+    <activity android:name=".mvp.ui.activity.SearchActivity" />
+    <activity android:name=".mvp.ui.activity.SearchTchActivity" />
+    <activity
+        android:name=".mvp.ui.activity.CategoryActivity"
+        android:label="@string/sync_practice" />
+    <activity
+        android:name=".mvp.ui.activity.CategoryTchActivity"
+        android:label="@string/tech_practice" />
+    <activity
+        android:name=".setting.mvp.ui.activity.FeedbackActivity"
+        android:label="@string/feedback" />
+    <activity
+        android:name=".paper.mvp.ui.activity.CardActivity"
+        android:label="@string/answer_card" />
+    <activity android:name=".correct.mvp.ui.activity.CorrectHomeworkActivity" />
+    <activity
+        android:name=".mvp.ui.activity.UnpayActivity"
+        android:label="@string/unpay" />
+    <activity
+        android:name=".mvp.ui.activity.MemberItemActivity"
+        android:label="@string/class_member" />
+    <activity
+        android:name=".organize.mvp.ui.activity.ClassItemActivity"
+        android:label="@string/member_of_grade" />
+    <activity
+        android:name=".organize.mvp.ui.activity.GradeItemActivity"
+        android:label="@string/member_of_school" />
+    <activity
+        android:name=".organize.mvp.ui.activity.SchoolItemActivity"
+        android:label="@string/my_school" />
+    <activity
+        android:name=".mvp.ui.activity.ClassSelActivity"
+        android:label="@string/belong_class" />
+    <activity
+        android:name=".mvp.ui.activity.HWClassSelActivity"
+        android:label="@string/belong_class" />
+    <activity android:name=".main.mvp.ui.activity.TchMainActivity" />
+    <activity
+        android:name=".login.mvp.ui.activity.GuideActivity"
+        android:label="@string/guide" />
+    <activity android:name=".paper.mvp.ui.activity.SetHomeworkActivity" />
+    <activity
+        android:name=".mvp.ui.activity.SelPaperActivity"
+        android:label="@string/selpaper" />
+    <activity
+        android:name=".mvp.ui.activity.EQDetailActivity"
+        android:label="@string/detail_resolve" />
+    <activity
+        android:name=".my.mvp.ui.activity.SignedActivity"
+        android:label="@string/my_signed" />
+    <activity
+        android:name=".setting.mvp.ui.activity.AboutActivity"
+        android:label="@string/about_us" />
+    <activity
+        android:name=".mvp.ui.activity.QuestionStoreActivity"
+        android:label="@string/my_store" />
+    <activity
+        android:name=".mvp.ui.activity.ExerRecordActivity"
+        android:label="@string/exer_record" />
+    <activity
+        android:name=".my.mvp.ui.activity.MsgActivity"
+        android:label="@string/my_msg" />
+    <activity
+        android:name=".my.mvp.ui.activity.PostsActivity"
+        android:label="@string/post" />
+    <activity
+        android:name=".organize.mvp.ui.activity.ClassMemberActivity"
+        android:label="@string/class_member" />
+    <activity
+        android:name=".mvp.ui.activity.AllHomeworkActivity"
+        android:label="@string/homework_newest" />
+    <activity
+        android:name=".my.mvp.ui.activity.ProfileActivity"
+        android:label="@string/person_profile" />
+    <activity
+        android:name=".setting.mvp.ui.activity.SettingActivity"
+        android:label="@string/setting" />
+    <activity
+        android:name=".mvp.ui.activity.HomeworkListActivity"
+        android:label="@string/home_work" />
+    <activity
+        android:name=".mvp.ui.activity.ClassActivity"
+        android:label="@string/my_class" />
+    <activity android:name=".login.mvp.ui.activity.LoginActivity" />
+    <activity
+        android:name=".login.mvp.ui.activity.IndexActivity"
+        android:theme="@style/SplashTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".main.mvp.ui.activity.MainActivity" /> <!-- 剪切图片 -->
+    <activity
+        android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+        android:theme="@style/Base.Theme.AppCompat" />
+
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="${applicationId}"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+    <!--
+ 只要依赖 AutoSize 就必须填写设计图尺寸, 否则报错, 不想使用 AutoSize 就不要依赖 AutoSize
+        只要填写完设计图的尺寸, AutoSize 就会自动启动, 以下 dp 尺寸是根据公式 px / (dpi / 160) 求出, 运算时使用测试机的 dpi 即可
+        AutoSize 的详细介绍请看这里 https://juejin.im/post/5bce688e6fb9a05cf715d1c2
+        -->
+    <meta-data
+        android:name="design_width_in_dp"
+        android:value="375" />
+    <meta-data
+        android:name="design_height_in_dp"
+        android:value="667" /> <!-- Arms 配置 -->
+    <meta-data
+        android:name="com.example.df.zhiyun.app.GlobalConfiguration"
+        android:value="ConfigModule" />
+</application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+        android:background="?attr/colorPrimary"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:drawableLeft="@mipmap/arrow_left_white"
+            android:paddingLeft="10dp"
+            android:id="@+id/toolbar_left_title"
+            android:layout_width="wrap_content"
+            android:minWidth="45dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/size_24"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:layout_gravity="left" />
+        <com.example.df.zhiyun.mvp.ui.widget.SegmentControlView
+            android:layout_gravity="center"
+            android:id="@+id/segmentView"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            app:scv_TextSelectedColor="@color/blue_tag"
+            app:scv_TextSize="@dimen/size_28"
+            app:scv_TextNormalColor="@color/white"
+            app:scv_BackgroundNormalColor="@color/blue_tag"
+            app:scv_BackgroundSelectedColor="@color/white"
+            app:scv_FrameColor="@color/white"
+            app:scv_FrameCornerRadius="0dp"
+            app:scv_FrameWidth="1dp"
+            app:scv_Gradient="true"
+            app:scv_SegmentPaddingVertical="5dp"
+            app:scv_TextArray="@array/array_plan_type"/>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_homework"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

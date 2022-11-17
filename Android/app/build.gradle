@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.example.df.zhiyun"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+        // 2、启用Multidex
+        multiDexEnabled true
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi-v7a','x86'
+            // 还可以添加 'armeabi', 'x86', 'x86_64', 'mips', 'mips64', 'armeabi-v8a'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file(rootProject.ext.signingConf["keystroe_storeFile_debug"])
+            storePassword rootProject.ext.signingConf["keystroe_storePassword_debug"]
+            keyAlias rootProject.ext.signingConf["keystroe_keyAlias_debug"]
+            keyPassword rootProject.ext.signingConf["keystroe_keyPassword_debug"]
+        }
+        uat {
+            storeFile file(rootProject.ext.signingConf["keystroe_storeFile_release"])
+            storePassword rootProject.ext.signingConf["keystroe_storePassword_release"]
+            keyAlias rootProject.ext.signingConf["keystroe_keyAlias_release"]
+            keyPassword rootProject.ext.signingConf["keystroe_keyPassword_release"]
+        }
+        release {
+            storeFile file(rootProject.ext.signingConf["keystroe_storeFile_release"])
+            storePassword rootProject.ext.signingConf["keystroe_storePassword_release"]
+            keyAlias rootProject.ext.signingConf["keystroe_keyAlias_release"]
+            keyPassword rootProject.ext.signingConf["keystroe_keyPassword_release"]
+        }
+    }
+
+    buildTypes {
+        debug {
+            resValue "string", "app_name", "dev伴你成长学生"
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexKeepProguard file('multidex-config.pro')
+            buildConfigField("String", "BASE_URL", rootProject.ext.appConf["base_url_debug"])
+        }
+
+        uat {
+            resValue "string", "app_name", "uat伴你成长学生"
+            applicationIdSuffix ".uat"
+            versionNameSuffix "-uat"
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            signingConfig signingConfigs.uat
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            debuggable = true
+
+//            minifyEnabled true
+//            shrinkResources true
+//            zipAlignEnabled true
+//            debuggable = false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexKeepProguard file('multidex-config.pro')
+            buildConfigField("String", "BASE_URL", rootProject.ext.appConf["base_url_uat"])
+        }
+
+        release {
+            resValue "string", "app_name", "伴你成长学生"
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexKeepProguard file('multidex-config.pro')
+            buildConfigField("String", "BASE_URL", rootProject.ext.appConf["base_url_release"])
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.quicklib:quicklib-multidex:1.0.1'   //分包
+    //support
+    implementation rootProject.ext.dependencies["cardview-v7"]
+
+    //tools
+    //注意 Arms 核心库现在并不会依赖某个 EventBus, 要想使用 EventBus, 还请在项目中自行依赖对应的 EventBus
+    //现在支持两种 EventBus, greenrobot 的 EventBus 和畅销书 《Android源码设计模式解析与实战》的作者 何红辉 所作的 AndroidEventBus
+    //依赖后 Arms 会自动检测您依赖的 EventBus 并自动注册
+    //建议使用 AndroidEventBus, 特别是组件化项目, 原因请看 https://github.com/hehonghui/AndroidEventBus/issues/49
+    //这种做法可以让使用者有自行选择三方库的权利, 并且还可以减轻 Arms 的体积
+    implementation rootProject.ext.dependencies["androideventbus"]
+//    implementation rootProject.ext.dependencies["eventbus"]
+
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    implementation rootProject.ext.dependencies["progressmanager"]
+    implementation rootProject.ext.dependencies["retrofit-url-manager"]
+    implementation rootProject.ext.dependencies["lifecyclemodel"]
+
+    //view
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        exclude module: 'support-annotations'
+    }
+    implementation rootProject.ext.dependencies["paginate"]
+
+    //arms
+//    implementation project(':arms')
+    implementation 'me.jessyan:arms:2.5.2'
+
+    //Arms 核心库不再包含 AndroidAutoLayout, 现在可自行选择屏幕适配方案, 不想使用 AndroidAutoLayout 就不要依赖 arms-autolayout
+//    implementation 'me.jessyan:arms-autolayout:2.5.2'
+
+    //现在已经将 Demo 中的屏幕适配框架从 AndroidAutoLayout 替换为 AndroidAutoSize, AndroidAutoLayout 和 AndroidAutoSize 可以在项目中共存
+    //所以旧项目只要依赖 arms-autolayout 即可兼容之前的旧页面, 新页面可以使用 AndroidAutoSize 进行适配, 等有时间了再将旧页面全部替换为 AndroidAutoSize
+    implementation rootProject.ext.dependencies["autosize"]
+
+    //Arms 核心库不再包含 Glide, 想使用其他图片加载框架或者想自行扩展 ImageLoaderStrategy 就不要依赖 arms-imageloader-glide
+    //依赖 arms-imageloader-glide 后还需要在 GlobalConfiguration 中手动注册 GlideImageLoaderStrategy
+    implementation 'me.jessyan:arms-imageloader-glide:2.5.2'
+    implementation rootProject.ext.dependencies['statusbar-util']   //状态栏
+    implementation rootProject.ext.dependencies['convenientbanner']   //banner 控件
+
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation "com.android.support:design:28.0.0"
+
+    implementation rootProject.ext.dependencies['flexbox']   //flexbox控件
+    implementation rootProject.ext.dependencies['circle_iv']   //flexbox控件
+    implementation rootProject.ext.dependencies['KProgressHUD']   //等待对话框
+    implementation rootProject.ext.dependencies['baseRecyclerviewAdapter']   //
+    implementation rootProject.ext.dependencies['pickview']   //
+//    implementation 'com.github.yalantis:ucrop:2.2.3-native'  //图片剪切
+//    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'  //图片剪切
+    implementation 'com.zhihu.android:matisse:0.5.1' //相册
+    implementation 'id.zelory:compressor:1.0.4'     //压缩
+    implementation 'me.kareluo.ui:popmenu:1.1.0'  //弹出菜单
+    implementation 'q.rorbin:badgeview:1.1.0'  //小红点
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'   //图标
+//    implementation 'com.github.zhangliangming:Player:v1.1'
+    implementation files('libs/pldroid-player-2.1.8.jar')
+    implementation project(':cropper')
+    implementation project(':latexlibrary')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //test
+    testImplementation rootProject.ext.dependencies["junit"]
+    testImplementation rootProject.ext.dependencies["runner"]
+
+
+    debugImplementation rootProject.ext.dependencies["canary-debug"]
+    uatImplementation rootProject.ext.dependencies["canary-release"]
+    releaseImplementation rootProject.ext.dependencies["canary-release"]
+    testImplementation rootProject.ext.dependencies["canary-release"]
+
+}

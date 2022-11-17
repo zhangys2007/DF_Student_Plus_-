@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <FrameLayout
+        android:id="@+id/fl_man"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@mipmap/man"
+            android:drawablePadding="@dimen/padding_2"
+            android:text="@string/man"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <FrameLayout
+        android:id="@+id/fl_women"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@mipmap/women"
+            android:drawablePadding="@dimen/padding_2"
+
+            android:text="@string/women"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+    </FrameLayout>
+</LinearLayout>

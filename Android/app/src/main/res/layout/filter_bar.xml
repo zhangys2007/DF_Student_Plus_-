@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:showDividers="end"
+    android:divider="@drawable/shape_divider_v"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bar_height">
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fbl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:showDividerVertical="middle"
+        app:dividerDrawableVertical="@drawable/shape_divider_h"
+        app:alignItems="stretch"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_around">
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

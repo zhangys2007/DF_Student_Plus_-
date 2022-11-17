@@ -1,0 +1,364 @@
+<resources>
+    <string name="main_page">首页</string>
+    <!--<string name="app_name">伴你成长</string>-->
+    <string name="exit_notice">再次点击退出应用</string>
+    <string name="home_work">作业</string>
+    <string name="home_work_yuwen">语文作业</string>
+    <string name="home_work_english">英语作业</string>
+    <string name="home_work_math">数学作业</string>
+    <string name="homework_newest">最新作业</string>
+    <string name="undo">未做</string>
+    <string name="math">数学</string>
+    <string name="sync_practice">同步练习</string>
+    <string name="error_exer">错题本</string>
+    <string name="my_homework">我的作业</string>
+    <string name="my_data_nanaly">我的数据分析</string>
+    <string name="data_nanaly">数据分析</string>
+    <string name="my_class">我的班级</string>
+    <string name="my_msg">我的消息</string>
+    <string name="msg">消息</string>
+    <string name="post">公告</string>
+    <string name="setting">设置</string>
+    <string name="search_error">搜索错题</string>
+    <string name="search">搜索</string>
+    <string name="login">登陆</string>
+    <string name="pass">已通过</string>
+    <string name="un_pass">未通过</string>
+    <string name="my">我的</string>
+    <string name="newest_homework">最新作业</string>
+    <string name="local_store">本地存储</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="help">帮助</string>
+    <string name="feedback">意见反馈</string>
+    <string name="version_note">版本说明</string>
+    <string name="about_us">关于我们</string>
+    <string name="logout">退出登陆</string>
+    <string name="person_profile">个人资料</string>
+    <string name="avatar">头像</string>
+    <string name="user_name">用户名</string>
+    <string name="sex">性别</string>
+    <string name="birthday">出生日期</string>
+    <string name="e_mail">E-mail</string>
+    <string name="mobile">手机号</string>
+    <string name="change_psw">修改密码</string>
+    <string name="change_school">所在学校</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="date">日期</string>
+    <string name="subject">科目</string>
+    <string name="done">已做</string>
+    <string name="chinese">语文</string>
+    <string name="english">英语</string>
+    <string name="corrected">已批改</string>
+    <string name="uncorrected">未批改</string>
+    <string name="start">开始</string>
+    <string name="end_time">结束</string>
+    <string name="class_name">班级</string>
+    <string name="class_intro">班级简介：%1$s</string>
+    <string name="class_info">创建人：%1$s   班号：%2$s   成员：%3$d</string>
+    <string name="has_no_email">对方没有设置邮箱</string>
+    <string name="quote">(%1$s)</string>
+    <string name="class_member">班级成员</string>
+    <string name="system_post">系统通知</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+    <string name="clear">清除</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="input_account">请输入账号</string>
+    <string name="input_psw">请输入密码</string>
+    <string name="exer_record">练习记录</string>
+    <string name="total_error_question">共计%1$d道错题</string>
+    <string name="store_question">收藏试题</string>
+    <string name="my_store">我的收藏</string>
+    <string name="all">全部</string>
+    <string name="my_signed">我的签到</string>
+    <string name="moon_total_signed">当月累计签到</string>
+    <string name="signed">签到</string>
+    <string name="signed_notice">签到提醒</string>
+    <string name="resigned_error">你已签过到</string>
+    <string name="day">天</string>
+    <string name="detail_resolve">详解</string>
+    <string name="check_point">考点</string>
+    <string name="answer">答案</string>
+    <string name="correct_answer">正确答案</string>
+    <string name="my_answer">我的答案</string>
+    <string name="analy">分析</string>
+    <string name="data_analy">数据分析</string>
+    <string name="guide">引导</string>
+    <string name="comment">讲评</string>
+    <string name="selpaper">精选试卷</string>
+    <string name="tech_designe">教学设计</string>
+    <string name="my_template">我的教案</string>
+    <string name="tech_practice">教材习题</string>
+    <string name="correct_homework">作业批改</string>
+    <string name="uncomplete">未完成</string>
+    <string name="complete">已完成</string>
+    <string name="already_correct">已批</string>
+    <string name="un_corrected">未批</string>
+    <string name="put_homework">布置作业</string>
+    <string name="search_homework">搜索作业</string>
+    <string name="belong_class">所带班级</string>
+    <string name="my_school">我的学校</string>
+    <string name="member_of_school">学校成员</string>
+    <string name="member_of_grade">年级成员</string>
+    <string name="unpay">未交</string>
+    <string name="notice_pay_homework">提醒学生交作业</string>
+    <string name="behavior_fix_bottom">com.example.df.zhiyun.mvp.ui.widget.BottomBehavior</string>
+    <string name="last_question">上一题</string>
+    <string name="next_question">下一题</string>
+    <string name="submit">提交试卷</string>
+    <string name="do_submit">提交</string>
+    <string name="notice">提示</string>
+    <string name="notice_quit_homework">是否中断作答</string>
+    <string name="notice_submit_homework">是否提交答卷</string>
+    <string name="notice_submit_correct">是否提交批改</string>
+    <string name="notice_force_submit">答题时间已到，请确认交卷</string>
+    <string name="answer_card">答题卡</string>
+    <string name="uncomplete_done">未全部完成</string>
+    <string name="paper">试卷</string>
+    <string name="paper_question">试题</string>
+    <string name="input_answer">请输入答案</string>
+    <string name="answer_with_canvas">选择画板答题</string>
+    <string name="answer_with_edite">选择输入答题</string>
+    <string name="answer_with_camera">选择拍照答题</string>
+    <string name="reanswer">重新答题</string>
+    <string name="sub_title_question">第%1$d题/共%2$d小题</string>
+    <string name="behavior_bottom_sheet_ban">com.example.df.zhiyun.mvp.ui.widget.EmbedBottomSheetBehavior</string>
+    <string name="behavior_attach">com.example.df.zhiyun.mvp.ui.widget.AttachBehavior</string>
+    <string name="input_your_suggestion">感谢你使用伴你成长App，使用过程中有任何意见或建议请反馈给我们</string>
+    <string name="submit_suggestion">提交意见</string>
+    <string name="alarm_empty_suggetion">意见不能为空</string>
+    <string name="input_search_content">输入搜索内容</string>
+    <string name="search_empty_warning">搜索内容不能为空</string>
+    <string name="current_book">当前课本:</string>
+    <string name="switch_version">切换版本</string>
+    <string name="practice">练习</string>
+    <string name="source">来源:</string>
+    <string name="notice_clean_cache">是否清除缓存</string>
+    <string name="preview">预览</string>
+    <string name="formed_papers">已组试卷</string>
+    <string name="put">布置</string>
+    <string name="cancel_hw">取消布置</string>
+    <string name="sel_class">选择班级</string>
+    <string name="test">考试</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time1">截止时间</string>
+    <string name="hide_before_starte">在开始前对学生隐藏</string>
+    <string name="put_homework_ok">布置成功</string>
+    <string name="cancel_homework_ok">取消成功</string>
+    <string name="type">类型</string>
+    <string name="show_after_submit">在提交后显示答案</string>
+    <string name="put_hw_detail">布置详情</string>
+    <string name="put_time">布置时间</string>
+    <string name="put_statudent">布置学生</string>
+    <string name="clound_homework">云作业</string>
+    <string name="resource_preview">资源预览</string>
+    <string name="save_success">保存图片成功</string>
+    <string name="save_faile">保存图片失败</string>
+    <string name="function_introduce">功能介绍</string>
+    <string name="company_about">公司简介</string>
+    <string name="hot_line">客服热线</string>
+    <string name="focus_us">关注我们</string>
+    <string name="collapse">collapse  ↑</string>
+    <string name="expand">expand  ↓</string>
+    <string name="submit_time">提交时间:</string>
+    <string name="submit_number">提交人数:</string>
+    <string name="name">姓名：</string>
+    <string name="class_tag">班级：</string>
+    <string name="full_credit">满分</string>
+    <string name="my_marks">我的得分</string>
+    <string name="student_marks">学生得分</string>
+    <string name="cls_avg_marks">班级均分</string>
+    <string name="check_paper">查看试题</string>
+    <string name="submit_correct">提交批改</string>
+    <string name="expand_show_detail">展开查看详情</string>
+    <string name="put_div">单独布置</string>
+    <string name="student_growth_trace">学生成长轨迹</string>
+    <string name="score_trace">成绩追踪</string>
+    <string name="knowledgestatistics">知识点统计</string>
+    <string name="analy_report">分析报告</string>
+    <string name="im_inspect"><![CDATA[立即查看>>]]></string>
+    <string name="go_correct"><![CDATA[前往批改>>]]></string>
+    <string name="layer_hw">分层作业</string>
+    <string name="digital_temp">数字教案</string>
+    <string name="improve_trace_class">班级成长轨迹</string>
+    <string name="hw_submit_correct">作业提交及批改</string>
+    <string name="cla">班级</string>
+    <string name="assign_count">布置人数</string>
+    <string name="submit_count">提交人数</string>
+    <string name="correct_count">批改人数</string>
+    <string name="submit_rate">提交率</string>
+    <string name="correct_rate">批改率</string>
+    <string name="input_teacher_name">输入老师姓名</string>
+    <string name="accese_count">访问次数</string>
+    <string name="total_count">总数</string>
+    <string name="total_person_count">总人数</string>
+    <string name="cloud_plan">云教案</string>
+    <string name="self_plan">自有教案</string>
+    <string name="file_create_count">创建文件数</string>
+    <string name="plan_count">教案个数</string>
+    <string name="hw_count">作业个数</string>
+    <string name="plan_using">教案使用</string>
+    <string name="comment_usage_analy">讲评报告使用分析</string>
+    <string name="use_count">使用次数</string>
+    <string name="cloud_hw_comment">云作业讲评</string>
+    <string name="self_hw_comment">自有作业讲评</string>
+    <string name="knowledge_analy">知识点分析</string>
+    <string name="history_hw_analy">历次作业分析</string>
+    <string name="inspect_class">查看班级</string>
+    <string name="inspect">查看</string>
+    <string name="class_correct_info">班级批改详情</string>
+    <string name="score_sumary">成绩概况</string>
+    <string name="person_count">人数</string>
+    <string name="max_score">最高分</string>
+    <string name="min_score">最低分</string>
+    <string name="avg_score">平均分</string>
+    <string name="middle_level">中位数</string>
+    <string name="all_level">众数</string>
+    <string name="std">标准差</string>
+    <string name="already_yet">已发/未发</string>
+    <string name="submit_yet">已交/未交</string>
+    <string name="correct_yet">已批/未批</string>
+    <string name="level_sbrad">等级分布</string>
+    <string name="score_level">分档</string>
+    <string name="person_numb">人数</string>
+    <string name="earn">占比</string>
+    <string name="perfect">优秀</string>
+    <string name="good">良好</string>
+    <string name="middle">中等</string>
+    <string name="pass_score">及格</string>
+    <string name="fail">不及格</string>
+    <string name="knowledge_point">知识点</string>
+    <string name="score">分数</string>
+    <string name="avg_score_of_class">班级平均得分率</string>
+    <string name="program_index">项目序号</string>
+    <string name="question_index">题号</string>
+    <string name="question_type">题型</string>
+    <string name="measure_target">测量目标</string>
+    <string name="check_content">考察内容</string>
+    <string name="difficluty">难易度</string>
+    <string name="score_value">分值</string>
+    <string name="identity">区分度</string>
+    <string name="error_rate">错误率</string>
+    <string name="score_compear_class">班级成绩概览</string>
+    <string name="level_compear">等级分布对比</string>
+    <string name="layer_compear">层次分布对比</string>
+    <string name="sum_count">合计</string>
+    <string name="layer_1">第一层次</string>
+    <string name="layer_2">第二层次</string>
+    <string name="layer_3">第三层次</string>
+    <string name="layer_4">第四层次</string>
+    <string name="teacher">老师</string>
+    <string name="percent_earn">所占比例</string>
+    <string name="sort_order">排名</string>
+    <string name="teacher_class">授课老师</string>
+    <string name="sys_post">系统推送</string>
+    <string name="title">伴你成长</string>
+    <string name="correct_hw">批改作业</string>
+    <string name="correct_paper">考试阅卷</string>
+    <string name="cls_error">班级错题</string>
+    <string name="backlog">待办事项</string>
+    <string name="see_more">查看更多</string>
+    <string name="focus_stud">关注学生</string>
+    <string name="tech">教学</string>
+    <string name="see_history_hw"><![CDATA[查看历史作业>]]></string>
+    <string name="cls_report">班级报告</string>
+    <string name="score_rise">成绩上升</string>
+    <string name="score_sink">成绩下降</string>
+    <string name="score_none">成绩不变</string>
+    <string name="question_resolve">题目分析</string>
+    <string name="knowlage_point">知识点</string>
+    <string name="plan">教案</string>
+    <string name="homework_manage">作业管理</string>
+    <string name="history_homework">历次作业</string>
+    <string name="test_manager">考试管理</string>
+    <string name="make_paper">新建考试</string>
+    <string name="group_paper">组卷出题</string>
+    <string name="all_paper">全部考试</string>
+    <string name="plan_version">教材版本</string>
+    <string name="all_put">全部布置</string>
+    <string name="sel_put">选题布置</string>
+    <string name="double_table">双向细目表</string>
+    <string name="sel_textbook_version">选择教材版本</string>
+    <string name="put_im">立即布置</string>
+    <string name="view_after_stop">截止后查看</string>
+    <string name="view_after_correct">批改后查看</string>
+    <string name="answer_and_score">答案和成绩</string>
+    <string name="time_notice">时间提醒</string>
+    <string name="hw_name">作业名称</string>
+    <string name="search_level_report">学业水平报告查询</string>
+    <string name="start_search">开始查询</string>
+
+
+    <array name="count_type">
+        <item>日统计</item>
+        <item>周统计</item>
+        <item>月统计</item>
+    </array>
+
+    <array name="array_sex">
+        <item>男</item>
+        <item>女</item>
+        <item>取消</item>
+    </array>
+    <array name="grade_score">
+        <item>成绩概览</item>
+        <item>年级排名分布</item>
+        <item>平均分对比</item>
+        <item>等级分布对比</item>
+        <item>四个层次对比</item>
+    </array>
+    <array name="knowledge_grasp">
+        <item>知识点掌握情况</item>
+        <item>双向细目表</item>
+    </array>
+    <array name="compear_class">
+        <item>整体成绩对比</item>
+        <item>小题得分对比</item>
+        <item>知识点得分对比</item>
+    </array>
+    <array name="paper_comment">
+        <item>双向细目表分析</item>
+        <item>知识点得分分析</item>
+        <item>小题得分分析</item>
+    </array>
+    <array name="array_homework_newest_old">
+        <item>最新作业</item>
+        <item>历次作业</item>
+    </array>
+
+    <array name="array_plan_type">
+        <item>云教案</item>
+        <item>自有教案</item>
+    </array>
+
+
+    <array name="array_pic_from">
+        <item>相机拍摄</item>
+        <item>相册选择</item>
+        <item>取消</item>
+    </array>
+
+    <array name="array_homework_title">
+        <item>全部作业</item>
+        <item>语文作业</item>
+        <item>数学作业</item>
+        <item>英语作业</item>
+    </array>
+
+    <array name="array_homework_tags">
+        <item>全部</item>
+        <item>语文</item>
+        <item>数学</item>
+        <item>英语</item>
+    </array>
+
+    <plurals name="error_over_count">
+        <item quantity="one">你只能选择一张图片</item>
+        <item quantity="many">你只能选择 %1$d 张图片</item>
+    </plurals>
+
+
+
+</resources>

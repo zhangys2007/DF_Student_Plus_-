@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@mipmap/thumb"
+        android:layout_centerVertical="true"
+        android:id="@+id/civ_thumb"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="@dimen/size_28"
+            android:textColor="@color/text_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_grade"
+                android:textSize="@dimen/size_22"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/text_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_class"
+                android:textSize="@dimen/size_22"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/text_999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="成长轨迹"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

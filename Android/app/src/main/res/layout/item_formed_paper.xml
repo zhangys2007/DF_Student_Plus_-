@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp">
+    <TextView
+        android:drawablePadding="@dimen/padding_1"
+        android:id="@+id/tv_formed_paper_name"
+        android:textSize="@dimen/size_28"
+        android:textColor="@color/text_333"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.google.android.flexbox.FlexboxLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:justifyContent="space_between"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <ImageView
+            android:src="@mipmap/preview_blue"
+            android:id="@+id/ib_sel_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/arrange"
+            android:id="@+id/ib_sel_arrange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/cancel_red"
+            android:id="@+id/ib_sel_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/detail_green"
+            android:id="@+id/ib_sel_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

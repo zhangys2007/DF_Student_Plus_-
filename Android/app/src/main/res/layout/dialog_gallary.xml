@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ibtn_back"
+        android:src="@mipmap/arrow_left_grey"
+        android:scaleType="center"
+        android:layout_width="@dimen/bar_height"
+        android:layout_height="@dimen/bar_height" />
+    <com.example.df.zhiyun.mvp.ui.widget.MTouchViewPager
+        android:id="@+id/vp_gallary"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </com.example.df.zhiyun.mvp.ui.widget.MTouchViewPager>
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/iv_save"
+            android:layout_marginLeft="@dimen/padding_2"
+            android:src="@mipmap/save"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:text="0/0"
+            android:id="@+id/tv_indicator"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/size_24"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>
